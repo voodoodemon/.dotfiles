@@ -1,3 +1,0 @@
-Thaer Khawaja's dotfiles
--
-
