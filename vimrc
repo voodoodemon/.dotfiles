@@ -19,11 +19,11 @@ au FileType python setl ts=4 sts=4 sw=4
 " =================
 
 " quick command shortcuts
-nmap ; :
+noremap ; :
+noremap \ ;
 imap ;, <Esc>
 vmap ;, <Esc>
-nmap ' "
-vmap ' "
+map ' "
 
 " fn key shortcuts
 map <F2> :set wrap!<CR>
@@ -33,6 +33,19 @@ map <F4> :set number!<CR>
 " navigate wrapped lines as display lines
 map j gj
 map k gk
+
+" use arrow keys to move between split buffer views in normal mode
+nmap <Up> <C-w>k
+nmap <Down> <C-w>j
+nmap <Left> <C-w>h
+nmap <Right> <C-w>l
+
+" use arrow keys to resize split buffer views in visual mode
+vmap <Up> <C-w>+
+vmap <Down> <C-w>-
+vmap <Left> <C-w><
+vmap <Right> <C-w>>
+
 
 " programmer-pvorak numbers-> punctuation in normal mode
 noremap [ 7
@@ -61,8 +74,12 @@ noremap 8 !
 " =================
 let mapleader = ","
 
-map <leader>t :TlistOpen<CR>
+map <leader>c :TlistOpen<CR>
 map <leader>w <C-w><C-w>
+
+" tab control
+map <leader>tn :tabnew<CR>
+map <leader>ts :tabclose<CR>
 
 
 " Scripts
@@ -100,6 +117,6 @@ function! DoWindowSwap()
   exe 'hide buf' markedBuf 
 endfunction
 
-nmap <silent> <leader>w :call MarkWindowSwap()<CR>
+nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 " </swap window buffers> source: stackoverflow.com
