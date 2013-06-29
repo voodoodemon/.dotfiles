@@ -10,7 +10,7 @@ set number ruler incsearch
 colorscheme jellybeans
 filetype plugin indent on
 
-" case-specific syntax
+" case-specific syntax options
 set cinkeys-=0# cino=:g0
 au FileType python setl ts=4 sts=4 sw=4
 
@@ -46,8 +46,7 @@ vmap <Down> <C-w>-
 vmap <Left> <C-w><
 vmap <Right> <C-w>>
 
-
-" programmer-pvorak numbers-> punctuation in normal mode
+" programmer-dvorak numbers-> punctuation in normal and visual mode
 noremap [ 7
 noremap { 5
 noremap } 3
@@ -76,10 +75,7 @@ let mapleader = ","
 
 map <leader>c :TlistOpen<CR>
 map <leader>w <C-w><C-w>
-
-" tab control
 map <leader>tn :tabnew<CR>
-map <leader>ts :tabclose<CR>
 
 
 " Scripts
@@ -100,7 +96,6 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 " </remember cursor position> source: vim.wikia.com
-
 
 " <swap window buffers>
 function! MarkWindowSwap()
