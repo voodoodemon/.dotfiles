@@ -5,7 +5,7 @@
 syntax on
 set t_Co=256
 set ts=2 sts=2 sw=2 et
-set textwidth=80 wrap
+set textwidth=0 wrap
 set number ruler incsearch
 colorscheme jellybeans
 filetype plugin indent on
@@ -45,28 +45,6 @@ vmap <Up> <C-w>+
 vmap <Down> <C-w>-
 vmap <Left> <C-w><
 vmap <Right> <C-w>>
-
-" programmer-dvorak numbers-> punctuation in normal and visual mode
-noremap [ 7
-noremap { 5
-noremap } 3
-noremap ( 1
-noremap = 9
-noremap * 0
-noremap ) 2
-noremap + 4
-noremap ] 6
-noremap ! 8
-noremap 7 [
-noremap 5 {
-noremap 3 }
-noremap 1 (
-noremap 9 =
-noremap 0 *
-noremap 2 )
-noremap 4 +
-noremap 6 ]
-noremap 8 !
 
 
 " mapleader Shortcuts
