@@ -49,7 +49,7 @@ vmap <Right> <C-w>>
 
 " mapleader Shortcuts
 " =================
-let mapleader = ","
+let mapleader = " "
 
 map <leader>c :TlistOpen<CR>
 map <leader>w <C-w><C-w>
