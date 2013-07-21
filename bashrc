@@ -10,6 +10,7 @@ archey
 [[ $- != *i* ]] && return
 
 alias ls='ls -FC --color=auto'
+alias la='ls -aFC --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
@@ -21,13 +22,16 @@ alias gc='gcc -Wall -O0 -o'
 
 # git
 #
-alias ga='git add .'
+alias ga='git add'
+alias gr='git rm'
+alias gv='git mv'
 alias gt='git commit'
 alias gca='git commit -a'
 alias gcm='git commit -m'
 alias gco='git checkout'
-alias gpush='git push'
-alias gpull='git pull'
+alias gpush='git push origin master'
+alias gpull='git pull origin master'
+
 
 # Arch Linux aliases
 #
