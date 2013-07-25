@@ -15,7 +15,7 @@ syntax on
 au FileType make setl noet
 au FileType c,cpp setl cinkeys-=0# cino=:g0
 au FileType python setl ts=4 sts=4 sw=4
-au FileType asm setl ts=8 sts=8 sw=8 autoindent
+au FileType asm setl ts=8 sts=8 sw=8 smartindent
 
 " Command Shortcuts
 " =================
