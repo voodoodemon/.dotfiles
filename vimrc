@@ -20,6 +20,9 @@ au FileType asm setl ts=8 sts=8 sw=8 smartindent
 " Command Shortcuts
 " =================
 
+" get rid of Ex mode
+nnoremap Q <nop>
+
 " quick command shortcuts
 noremap ; :
 noremap ;; ;
