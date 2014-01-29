@@ -63,5 +63,5 @@ alias eumount='ecryptfs-umount-private'
 
 alias poweroff='systemctl poweroff'
 
-
+# redshift alias for vancouver setting
 alias redvan='redshift -l 49.27:-123.10 -t 6500:3600 -g 0.8 -m vidmode -v'
