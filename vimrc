@@ -26,7 +26,7 @@ nnoremap Q <nop>
 " quick command shortcuts
 noremap ; :
 noremap ;; ;
-imap ;, <Esc>
+imap ;; <Esc>
 map ' "
 
 " navigate wrapped lines as display lines
