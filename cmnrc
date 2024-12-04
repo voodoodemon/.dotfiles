@@ -1,0 +1,10 @@
+#
+# common functionality for mutiple shells
+#
+
+alias ls='ls -FC --color=auto'
+alias la='ls -aFC --color=auto'
+alias ll='ls -lF --color=auto'
+alias lla='ls -alF --color=auto'
+
+alias ..='cd ..'
