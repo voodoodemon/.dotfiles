@@ -16,7 +16,7 @@ export DOTFILES=$DOTFILES
 echo "DOTFILES env var set to '$DOTFILES'"
 
 # Make symbolic links to dotfiles
-dotfiles=("cmnrc" "zshrc" "zshenv" "bashrc" "vimrc" "vim")
+dotfiles=("cmnrc" "zshrc" "zshenv" "bashrc" "vimrc" "vim" "tmux.conf")
 for df in "${dotfiles[@]}"; do
   if [[ -f "$DOTFILES/$df" || -d "$DOTFILES/$df" ]]; then
     ln -s $DOTFILES/$df $HOME/.$df

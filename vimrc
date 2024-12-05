@@ -33,7 +33,7 @@ map j gj
 map k gk
 
 " define a command to split buffers vertically
-abbrev vb vert sb 
+cmap <expr> vb "vert sb"
 
 " use arrow keys to move between split buffer views in normal mode
 nmap <Up> <C-w>k
